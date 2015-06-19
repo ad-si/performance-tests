@@ -1,0 +1,26 @@
+{
+  "name": "performance-tests",
+  "version": "0.1.0",
+  "description": "Test performance of parsing, processing and serialization of 3D models",
+  "main": "index.coffee",
+  "dependencies": {
+    "coffeescript-styleguide": "^0.1.1"
+  },
+  "devDependencies": {
+    "coffeescript-styleguide": "^0.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brickify/performance-tests.git"
+  },
+  "keywords": [
+    "test",
+    "performance"
+  ],
+  "author": "Adrian Sieber",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brickify/performance-tests/issues"
+  },
+  "homepage": "https://github.com/brickify/performance-tests#readme"
+}
