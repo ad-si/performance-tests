@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/brickify/performance-tests/issues"
   },
-  "homepage": "https://github.com/brickify/performance-tests#readme"
+  "homepage": "https://github.com/brickify/performance-tests#readme",
+  "scripts": {
+    "postinstall": "cp node_modules/coffeescript-styleguide/coffeelint.json ."
+  }
 }
