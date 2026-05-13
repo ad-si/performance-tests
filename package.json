@@ -1,13 +1,37 @@
 {
   "name": "performance-tests",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Test performance of parsing, processing and serialization of 3D models",
-  "main": "index.coffee",
+  "type": "module",
+  "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "assets",
+    "templates"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node --enable-source-maps dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "mocha",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
   "dependencies": {
-    "coffeescript-styleguide": "^0.1.1"
+    "pug": "^3.0.3",
+    "readdirp": "^4.0.2",
+    "winston": "^3.13.0"
   },
   "devDependencies": {
-    "coffeescript-styleguide": "^0.1.1"
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.12.0",
+    "@types/pug": "^2.0.10",
+    "mocha": "^10.4.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0"
   },
   "repository": {
     "type": "git",
@@ -22,8 +46,5 @@
   "bugs": {
     "url": "https://github.com/brickify/performance-tests/issues"
   },
-  "homepage": "https://github.com/brickify/performance-tests#readme",
-  "scripts": {
-    "postinstall": "cp node_modules/coffeescript-styleguide/coffeelint.json ."
-  }
+  "homepage": "https://github.com/brickify/performance-tests#readme"
 }

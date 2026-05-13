@@ -1,1 +1,6 @@
-coffeelint.json
+node_modules
+dist
+results
+models
+*.log
+.DS_Store
